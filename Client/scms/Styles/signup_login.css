@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.Container {
+    display: flex;
+    width: 100vw;  /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.RightSide {
+    flex: 1.25;
+    background: linear-gradient(to bottom, #8e72dc, #6bb5ff); /* Same gradient for the whole background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.RightSide img {
+    width: 150px;
+    /* Ensure the image has a transparent background. No additional background set. */
+    margin-bottom: 20px;
+}
+
+.RightSide h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.RightSide p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.RightSide button {
+    padding: 10px 20px;
+    background-color: #2e61d9;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.RightSide button:hover {
+    background-color: #2551c1;
+}
+
+.LeftSide {
+    flex: 0.75;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.LeftSide h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.LeftSide form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 400px;
+}
+
+.LeftSide input {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.LeftSide button {
+    padding: 10px;
+    background-color: #2e61d9;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 25%;
+    margin-left: 150px;
+}
+
+.LeftSide button:hover {
+    background-color: #2551c1;
+}
